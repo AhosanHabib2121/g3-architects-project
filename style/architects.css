@@ -1,0 +1,10 @@
+/* universal selector ues here */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*====some common style used here for use full project start===  */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/*====some common style used here for use full project end===  */
