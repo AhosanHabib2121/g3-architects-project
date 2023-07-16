@@ -7,6 +7,9 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+main{
+    padding: 0 240px;
+}
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
@@ -16,6 +19,14 @@ body{
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+.primary-desc{
+    color:#727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 /*====some common style used here for use full project end===  */
 
@@ -59,21 +70,42 @@ ul li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-desc{
-    color: var(--dark-03, #727272);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 25px;
-    padding-top: 10px;
-    padding-bottom: 25px;
-}
 .banner-image{
     width: 100%;
 }
-
+/* teams section here */
+.team-section{
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+.team-photo-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.team-content{
+    padding: 0 70px;
+}
+.team-sub-title-one{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.team-title{
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.team-sub-title-two{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* ===== Responsive (media query) style use here */
 /* mobile device */
 @media screen and (max-width:576px) {
+    /* header section here */
     header{
         padding: 40px 50px;
     }
@@ -89,7 +121,8 @@ ul li a{
 }
 /* medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-     header{
+    /* header section here */
+    header{
         padding: 50px 80px;
     }
     nav , ul{
