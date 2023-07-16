@@ -7,4 +7,98 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: 0;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
 /*====some common style used here for use full project end===  */
+
+/* header section style use here */
+header{
+    background: hsla(32, 100%, 53%, 0.1);
+    padding: 50px 240px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+nav > ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* banner section here */
+.banner-content{
+    max-width: 862px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0 50px 0;
+}
+.banner-title{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-desc{
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.banner-image{
+    width: 100%;
+}
+
+/* ===== Responsive (media query) style use here */
+/* mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 40px 50px;
+    }
+    nav , ul{
+        flex-direction: column;
+    }
+    nav > ul{
+        padding-top: 10px;
+    }
+    ul li{
+        margin-top: 15px;
+    }
+}
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+     header{
+        padding: 50px 80px;
+    }
+    nav , ul{
+        flex-direction: column;
+    }
+     nav > ul{
+        padding-top: 10px;
+    }
+    ul li{
+        margin-top: 15px;
+    }
+}
