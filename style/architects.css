@@ -107,6 +107,32 @@ ul li a{
     font-size: 2.8rem;
     font-weight: 700;
 }
+/* facts section here */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 120px;
+}
+.facts-desc{
+    max-width: 550px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    margin-top: 80px;
+    text-align: center;
+    padding: 40px 50px;
+}
+.card-stats{
+    color:#424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.card-title{
+    font-size: 1.2rem;
+}
 /* ===== Responsive (media query) style use here */
 /* mobile device */
 @media screen and (max-width:576px) {
