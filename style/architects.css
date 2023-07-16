@@ -9,6 +9,7 @@ body{
 }
 main{
     padding: 0 240px;
+    /* padding: 0 100px; */
 }
 .btn-primary{
     border-radius: 8px;
@@ -39,6 +40,7 @@ main{
 header{
     background: hsla(32, 100%, 53%, 0.1);
     padding: 50px 240px;
+    /* padding: 50px 100px; */
 }
 nav{
     display:flex;
@@ -111,7 +113,7 @@ ul li a{
 .facts-card-container{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 120px;
+    padding-bottom: 65px;
 }
 .facts-desc{
     max-width: 550px;
@@ -133,6 +135,23 @@ ul li a{
 .card-title{
     font-size: 1.2rem;
 }
+/* sponsor section here */
+.sponsor-section{
+    margin: 80px 0;
+}
+.sponsor-head{
+    text-align: center;
+    padding: 0px 295px 35px;
+}
+.sponsor-image-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 90px;
+}
+.sponsor-image-container img{
+    width: 125px;
+}
+
 /* ===== Responsive (media query) style use here */
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -173,6 +192,25 @@ ul li a{
     .team-sub-title-two{
         font-size: 1.8rem;
     }
+    /* facts section here */
+    .facts{
+        padding: 0 65px 50px 65px;
+    }
+    .facts-card-container{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    /* sponsor section here */
+    .sponsor-section{
+        margin: 45px 0;
+    }
+    .sponsor-image-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 45px;
+    }
+    .sponsor-head{
+        padding: 0px 5px 35px;
+    }
 }
 /* medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -197,8 +235,30 @@ ul li a{
     .team-section{
         flex-direction: column;
     }
+    .team-photo-part{
+        grid-template-columns:1fr;
+    }
     .team-content{
         padding-top: 50px;
         padding-right: 52px;
+    }
+    /* facts section here */
+    .facts{
+        padding: 0 65px 50px 65px;
+    }
+    .facts-card-container{
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+    /* sponsor section here */
+    .sponsor-image-container{
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+    }
+    .sponsor-head{
+        padding: 0px 15px 35px;
+    }
+    .sponsor-section {
+        margin: 0;
     }
 }
